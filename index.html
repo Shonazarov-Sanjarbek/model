@@ -7,24 +7,29 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
-    <form action="" class="login">
-        <input class="login__username" type="text" placeholder="username" >
-        <input class="login__password" type="text" placeholder="password" >
-        <button type="submit">Log in</button>
-        <button class="btn__open" type="button">Register</button>
-    </form>
-
-    <div class="popap">
-        <div class="overlay"></div>
-        <form action="" class="model">
-            <input type="text" placeholder="name" class="model__name">
-            <input type="text" placeholder="username" class="model__username">
-            <input type="text" placeholder="password" class="model__password">
-            <input type="text" placeholder="password-confirm" class="model__password">
-            <button type="submit">Register</button>
-            <button type="button" class="btn__close">Close</button>
+    <div class="wrapper">
+        <form action="" class="login">
+            <p class="login__text">Log in</p>
+            <input class="login__username" type="text" placeholder="username">
+            <div class="password">
+                <input class="login__password" type="text" placeholder="password">
+            </div>
+            <button type="submit">Log in</button>
+            <button class="btn__open" type="button">Register</button>
         </form>
+    
+        <div class="popap">
+            <div class="overlay"></div>
+            <form action="" class="model">
+                <p class="model__text">Sign up</p>
+                <input type="text" placeholder="name" class="model__name">
+                <input type="text" placeholder="username" class="model__username">
+                <input type="password" placeholder="password" class="model__password">
+                <input type="password" placeholder="password-confirm" class="model__password">
+                <button type="submit">Register</button>
+                <button type="button" class="btn__close">Close</button>
+            </form>
+        </div>
     </div>
 
 
