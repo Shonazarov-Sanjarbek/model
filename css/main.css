@@ -75,7 +75,7 @@ input{
     background: none; 
     display: flex;
     justify-content: center;
-    /* display: none; */
+    display: none;
 }
 
 .popap{

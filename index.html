@@ -11,9 +11,9 @@
     <div class="wrapper">
         <form action="" class="login">
             <p class="login__text">Log in</p>
-            <input class="login__username" type="text" placeholder="username">
+            <input class="login__username" type="text" placeholder="username" required>
             <div class="password">
-                <input class="login__password" type="text" placeholder="password">
+                <input class="login__password" type="text" placeholder="password" required>
                 <div   class="btn__password">
                         <i class="fa-solid  fa-eye"></i>
                 </div>     
@@ -26,16 +26,16 @@
             <div class="overlay"></div>
             <form action="" class="model">
                 <p class="model__text">Sign up</p>
-                <input type="text" placeholder="name" class="model__name">
-                <input type="text" placeholder="username" class="model__username">
+                <input type="text" placeholder="name" class="model__name" required>
+                <input type="text" placeholder="username" class="model__username" required>
                 <div class="password">
-                    <input type="password" placeholder="password" class="model__password">
+                    <input type="password" placeholder="password" class="model__password" required>
                     <div class="btn__password">
                         <i class="fa-solid  fa-eye"></i>
                     </div>     
                 </div>
                 <div class="password">
-                    <input type="password" placeholder="password-confirm" class="model__password">
+                    <input type="password" placeholder="password-confirm" class="model__password-confirm"required>
                     <div class="btn__password">
                         <i class="fa-solid  fa-eye"></i>
                     </div>                  
@@ -47,6 +47,6 @@
     </div>
 
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
