@@ -34,9 +34,27 @@ model.addEventListener("submit", (event) => {
     let passwordConfirm =  modelPasswordConfirm.value
 
     if(password !== passwordConfirm){
-        return alert("parol bir xil emas")
-    } 
+        modelPassword.style.border = "1px solid red"
+        modelPasswordConfirm.style.border = "1px solid red"
+    }else{
+         modelPassword.style.border = "1px solid green"
+        modelPasswordConfirm.style.border = "1px solid green"
+    }
     console.log("ok");  
+
+    let existUser = USERS.findIndex(user => user.username === username)
+    if (existUser >= 0) {
+        return alert("bu username avval ro'yxatdan o'tgan")
+    }
+    console.log(existUser);
+    let newUser = {
+        id: new Date().getTime(),
+        name, 
+        username,
+        password,
+    }
+    USERS.push(newUser)
+    console.log(USERS);
 }
 )
 // Model end
